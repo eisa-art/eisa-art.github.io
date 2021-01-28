@@ -66,6 +66,30 @@ img {
   grid-row: 2 / 4;
 }
 
+#sidebar #main-nav ul li {
+  padding: 1rem 0;
+}
+
+#sidebar #main-nav ul li a {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+#sidebar #main-nav ul li a::after {
+  content: "";
+  display: block;
+  width: 1%;
+  height: 2px;
+  background: var(--secondary-color);
+  transition: width 0.3s;
+}
+
+#sidebar #main-nav ul li a.active::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
 /* content */
 #content {
   background: var(--secondary-color);
